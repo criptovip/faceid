@@ -11,7 +11,7 @@ function deactivate(){
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    var checkPageButton = document.getElementById('editList');
+    var checkPageButton = document.getElementById('getID');
     checkPageButton.addEventListener('click', function() {
 
 
@@ -23,26 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // retrieve from local storage
         
         // print a list with checkboxes
-        document.getElementById("corpo").innerHTML = "Aqui vamos exibir a lista de contatos e grupos existentes.";
+        document.getElementById("corpo").innerHTML = "Aqui vamos exibir a URL do usuário com o ID.";
 
         // add save button that will update the local storage and call the activateList function
 
 
-    }, false);
-  }, false);
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var checkPageButton = document.getElementById('activateList');
-    checkPageButton.addEventListener('click', function() {
-
-        activate();
-    }, false);
-  }, false);
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var checkPageButton = document.getElementById('deactivateList');
-    checkPageButton.addEventListener('click', function() {
-
-        deactivate();
     }, false);
   }, false);
